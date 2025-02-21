@@ -1,0 +1,401 @@
+
+        /* General Styles */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        /* Style the image section */
+.image-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.welcome-image {
+    width: 100%;
+    max-width: 1200px; /* Adjust max-width as needed */
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+        header {
+            background-color: #007aff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 3px solid #005bb5;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #005bb5;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            font-weight: 500;
+            border-radius: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #007aff;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-image: url('hospital.jpg'); /* Replace with a valid image */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+            background-color: #007aff;
+            background-blend-mode: multiply;
+            margin-bottom: 40px;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 20px;
+        }
+
+        .services-container {
+    padding: 40px 20px;
+    background-color:rgba(176, 210, 246, 0.5);
+}
+
+.services-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.services-header h2 {
+    font-size: 28px;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+.service-card {
+    background-color: #007bff;
+    color: white;
+    padding: 25px;
+    border-radius: 15px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.service-card p {
+    font-size: 16px;
+    margin: 0;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    .service-card {
+        padding: 20px;
+    }
+    .services-header h2 {
+        font-size: 24px;
+    }
+}
+
+
+        /* Carousel Section */
+        .carousel-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 40px auto;
+            position: relative;
+            overflow: hidden;
+            border-radius: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+        }
+
+        .carousel-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .carousel-header h2 {
+            font-size: 24px;
+            color: #007bff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .carousel-track-wrapper {
+            overflow: hidden;
+        }
+
+        .carousel-track {
+            display: flex;
+            gap: 20px;
+            transition: transform 0.5s ease;
+        }
+
+        .carousel-card {
+            flex: 0 0 300px;
+            height: 220px;
+            background: linear-gradient(135deg, #007bff, #00bcd4);
+            color: #ffffff;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .carousel-card:hover {
+            transform: scale(1.1);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .carousel-card h3 {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .carousel-card p {
+            margin: 10px 0 0;
+            font-size: 14px;
+        }
+
+        .carousel-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 123, 255, 0.8);
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 100;
+            transition: background-color 0.3s ease;
+        }
+
+        .hero-image {
+    position: relative;
+    text-align: center;
+    color: white;
+    background-image: url('../Care\ Compass\ Hospital/Assets/home.png'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    height: 400px; /* Adjust height as needed */
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+
+        .carousel-arrow:hover {
+            background-color: #005bb5;
+        }
+
+        .carousel-arrow-left {
+            left: 10px;
+        }
+
+        .carousel-arrow-right {
+            right: 10px;
+        }
+
+        /* Ensure overflow hidden and flex properties */
+.carousel-track-wrapper {
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.5s ease-in-out;
+    will-change: transform; /* Ensure smooth animations */
+}
+
+.test-check-container {
+    max-width: 500px;
+    margin: 20px auto;
+    background-color: #f0f8ff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.test-check-container h2 {
+    text-align: center;
+    color: #007aff;
+}
+
+#test-check-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#test-check-form label {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+#test-check-form input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+#test-check-form button {
+    padding: 10px;
+    background-color: #007aff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#test-check-form button:hover {
+    background-color: #005bb5;
+}
+
+
+
+        /* Footer Section */
+        footer {
+            text-align: center;
+            background-color: #005bb5;
+            color: white;
+            padding: 15px 0;
+            font-size: 14px;
+            margin-top: 40px;
+        }
+
+/* Floating Feedback Icon with Text Style */
+.feedback-icon {
+    position: fixed; /* Fixes the button position while scrolling */
+    bottom: 20px; /* Distance from the bottom of the page */
+    right: 20px; /* Distance from the right side of the page */
+    display: flex;
+    align-items: center;
+    background-color: #007aff; /* Blue background color */
+    padding: 10px 20px; /* Adds padding to the icon and text */
+    border-radius: 50px; /* Makes the button rounded */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow for 3D effect */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 1000; /* Ensures it's always above other content */
+    text-decoration: none; /* Removes underline */
+}
+
+/* Hover effect */
+.feedback-icon:hover {
+    background-color: #005ac1; /* Darker blue when hovered */
+}
+
+.feedback-icon img {
+    width: 40px; /* Size of the PNG icon */
+    height: 40px; /* Size of the PNG icon */
+    margin-right: 10px; /* Adds space between the icon and the text */
+}
+
+.feedback-text {
+    font-size: 16px; /* Text size */
+    color: white; /* Text color */
+    font-weight: bold; /* Makes the text bold */
+    display: inline-block;
+    text-decoration: none; /* Removes underline from the text */
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.search-container input[type="text"] {
+    width: 400px;
+    padding: 12px;
+    border: 2px solid #4a90e2;
+    border-radius: 25px 0 0 25px;
+    outline: none;
+    font-size: 16px;
+}
+
+.search-container button {
+    padding: 12px 20px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 0 25px 25px 0;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.search-container button:hover {
+    background-color: #357ab7;
+}
